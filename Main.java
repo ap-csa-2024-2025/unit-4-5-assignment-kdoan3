@@ -17,7 +17,7 @@ public class Main
 
       for (int repeatTimes = 0; repeatTimes < N; repeatTimes++)
       {
-        System.out.print(L)
+        System.out.print(L);
       }
     }
   }
@@ -36,16 +36,43 @@ public class Main
 
   public static void uprightNumberTriangle(int N)
   {
-    // code solution here
+    for (int row = 1; row <= N; row++)
+    {
+      for (int currentNum = 1; currentNum <= row; currentNum++)
+      {
+        System.out.print(currentNum + " ");
+      }
+      System.out.println(" ");
+    }
   }
 
   public static void starTree()
   {
-    // code solution here
+    for (int row = 1; row <= 9; row ++)
+    {
+      for (int space = 0; space <= row; space++)
+      {
+        System.out.print(" ")
+      }
+
+      for (int stars = 0; star < 9 -(row-1); star++)
+      {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+
   }
 
   public static void multTable()
   {
-    // code solution here
+    for (int row = 1; row <= 10; row++)
+    {
+      for (int num = 1; num <= 10; num++)
+      {
+        System.out.print((row*col) + "\t");
+      }
+      System.out.println();
+    }
   }
 }
