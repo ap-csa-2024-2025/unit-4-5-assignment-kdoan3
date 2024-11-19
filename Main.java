@@ -55,7 +55,7 @@ public class Main
         System.out.print(" ")
       }
 
-      for (int stars = 0; star < 9 -(row-1); star++)
+      for (int stars = row; star < 9; star++)
       {
         System.out.print("* ");
       }
